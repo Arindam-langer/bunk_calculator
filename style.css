@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('assets/image/bunk1.png') no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    /*box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);*/
+}
+
+.bunk {
+    width: 50%;
+    max-width: 600px;
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(135deg, #f3e5f5 0%, #c5cae9 100%);
+}
+
+.bunk h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.bunk h3 img {
+    margin-left: 15px;
+    height: 80px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    text-align: left;
+    position: relative;
+}
+
+.row input,
+.row select {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    color: #333;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.row input:focus,
+.row select:focus {
+    border-color: #3498db;
+    background: #ecf8ff;
+}
+
+.row select {
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ff3a1f;
+}
+
+#result {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+#result.show {
+    opacity: 1;
+}
+
+label {
+    font-size: 16px;
+    color: #2c3e50;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+p {
+    color: red;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .bunk {
+        width: 100%;
+        padding: 30px 20px;
+        border-radius: 10px;
+    }
+
+    .bunk h3 {
+        font-size: 28px;
+    }
+
+    .bunk h3 img {
+        height: 60px;
+    }
+
+    .row input,
+    .row select {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bunk h3 {
+        font-size: 24px;
+    }
+
+    .bunk h3 img {
+        height: 50px;
+    }
+
+    .row input,
+    .row select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}
+
